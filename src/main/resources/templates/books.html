@@ -8,5 +8,17 @@
     <ul th:each="book : ${books}">
         <li th:text="${book}"></li>
     </ul>
+
+    <br>
+
+    <p th:text="'Hello, ' + ${name} + '!'" />
+
+    <br>
+
+    <form action="/books/create" method="post">
+        <input name="name" type="text" />
+        <button type="submit">Send</button>
+    </form>
+
 </body>
 </html>
